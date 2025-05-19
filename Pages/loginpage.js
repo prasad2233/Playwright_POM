@@ -1,6 +1,12 @@
 const { expect } = require("@playwright/test");
+/**
+ * @typedef {import('@playwright/test').Page} Page
+ */
 import LoginPageLocaters from "../Locaters/LoginPageLocaters";
 class LoginPage {
+    /**
+    * @param {Page} page
+    */
     constructor(page) {
         this.page = page;
     }
