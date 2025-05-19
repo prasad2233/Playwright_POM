@@ -1,6 +1,13 @@
-const { expect } = require("@playwright/test");
+const { expect } = require('@playwright/test');
+
+/**
+ * @typedef {import('@playwright/test').Page} Page
+ */
 import HomePageLocaters from "../Locaters/HomepageLocaters";
 class HomePage {
+    /**
+    * @param {Page} page
+    */
     constructor(page) {
         this.page = page
     }
